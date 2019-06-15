@@ -29,10 +29,10 @@ const defaultConstructorOptions: ISmartManifestConstructorOptions = {
     {
       src: '/assets/icon-large.png',
       type: 'image/png',
-      sizes: '1024x1024',
+      sizes: '1024x1024'
     }
   ]
-}
+};
 
 export class SmartManifest {
   public options: ISmartManifestConstructorOptions;
