@@ -8,13 +8,15 @@ export interface ISmartManifestConstructorOptions {
   orientation?: string;
   background_color?: string;
   theme_color?: string;
-  icons?: [
-    {
-      src: string;
-      type: string;
-      sizes: string;
-    }
-  ];
+  icons?: Array<{
+    src: string;
+    type: string;
+    sizes: string;
+  }>;
+  related_applications?: Array<{
+    platform: 'play' | string;
+    id: string;
+  }>;
 }
 
 const defaultConstructorOptions: ISmartManifestConstructorOptions = {
@@ -23,15 +25,26 @@ const defaultConstructorOptions: ISmartManifestConstructorOptions = {
   start_url: '/',
   display: 'standalone',
   orientation: 'any',
-  background_color: '#fff',
-  theme_color: '#f78f21',
+  background_color: '#000000',
+  theme_color: '#000000',
   icons: [
     {
-      src: '/assets/icon-large.png',
+      src: '/assetbroker/manifest/icon-large.png',
       type: 'image/png',
       sizes: '1024x1024'
+    },
+    {
+      src: '/assetbroker/manifest/icon-144x144.png',
+      sizes: '144x144',
+      type: 'image/png'
+    },
+    {
+      src: '/assetbroker/manifest/icon-512x512.png',
+      sizes: '512x512',
+      type: 'image/png'
     }
-  ]
+  ],
+  related_applications: []
 };
 
 export class SmartManifest {
