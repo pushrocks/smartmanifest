@@ -13,20 +13,21 @@
     "format": "(gitzone format)"
   },
   "devDependencies": {
-    "@gitzone/tsbuild": "^2.0.22",
-    "@gitzone/tstest": "^1.0.24",
-    "@pushrocks/tapbundle": "^3.0.7",
-    "@types/node": "^12.0.8",
-    "tslint": "^5.17.0",
+    "@gitzone/tsbuild": "^2.1.17",
+    "@gitzone/tstest": "^1.0.28",
+    "@pushrocks/tapbundle": "^3.2.0",
+    "@types/node": "^13.5.2",
+    "tslint": "^6.0.0",
     "tslint-config-prettier": "^1.15.0"
   },
   "dependencies": {},
   "files": [
-    "ts/*",
-    "ts_web/*",
-    "dist/*",
-    "dist_web/*",
-    "assets/*",
+    "ts/**/*",
+    "ts_web/**/*",
+    "dist/**/*",
+    "dist_web/**/*",
+    "dist_ts_web/**/*",
+    "assets/**/*",
     "cli.js",
     "npmextra.json",
     "readme.md"
